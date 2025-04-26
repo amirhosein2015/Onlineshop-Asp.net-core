@@ -1,0 +1,102 @@
+﻿@model Onlineshop.Models.BannerItem
+
+@{
+    ViewData["Title"] = "ویرایش بنر";
+}
+
+<style>
+    .form-label-bar {
+        background-color: #666;
+        color: white;
+        padding: 8px 12px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    h2.page-title {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .form-control,
+    .form-select {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+</style>
+
+
+<div class="container mt-4">
+    <h2 class="page-title">ویرایش بنر</h2>
+
+    <form asp-action="Edit" enctype="multipart/form-data" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label asp-for="Title" class="form-label-bar">عنوان</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label asp-for="Link" class="form-label-bar">لینک</label>
+                <input asp-for="Link" class="form-control" />
+                <span asp-validation-for="Link" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <label asp-for="Description" class="form-label-bar">توضیحات</label>
+                <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+
+
+        
+
+            <div class="col-md-4 form-group">
+                <label asp-for="Position" class="form-label-bar">موقعیت</label>
+                <select asp-for="Position" class="form-select">
+                    <option value="">-- انتخاب موقعیت --</option>
+                    <option value="Slider">اسلایدر</option>
+                    <option value="MiddleRightBanner">بنر راست (وسط صفحه)</option>
+                    <option value="MiddleLeftBanner">بنر چپ (وسط صفحه)</option>
+                    <option value="BottomRightBanner">بنر راست (پایین صفحه)</option>
+                    <option value="BottomLeftBanner">بنر چپ (پایین صفحه)</option>
+                </select>
+                <span asp-validation-for="Position" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4 form-group">
+                <label asp-for="Priority" class="form-label-bar">اولویت</label>
+                <input asp-for="Priority" type="number" class="form-control" />
+                <span asp-validation-for="Priority" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4 form-group">
+                <label class="form-label-bar">تصویر جدید (در صورت نیاز)</label>
+                <input type="file" name="imageFile" class="form-control" />
+            </div>
+
+            <div class="col-md-12 text-center mt-3">
+                @if (!string.IsNullOrEmpty(Model.ImageName))
+                {
+                    <img src="~/images/banners/@Model.ImageName" alt="تصویر فعلی" class="img-thumbnail" style="max-width: 300px;" />
+                }
+            </div>
+        </div>
+
+        <div class="text-end mt-4">
+            <button type="submit" class="btn btn-primary">ذخیره تغییرات</button>
+            <a asp-action="List" class="btn btn-secondary">بازگشت</a>
+        </div>
+    </form>
+</div>

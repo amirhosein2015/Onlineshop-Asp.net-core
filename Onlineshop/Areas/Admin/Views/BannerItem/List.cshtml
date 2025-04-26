@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Onlineshop.Models.BannerItem>
+
+@{
+    ViewData["Title"] = "لیست بنرها و اسلایدرها";
+}
+
+<style>
+    h2.page-title {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+</style>
+
+
+<div class="container mt-4">
+    <h2 class="page-title">لیست بنرها و اسلایدرها</h2>
+
+    <div class="mb-3 text-end">
+        <a asp-action="Create" class="btn btn-success">+ افزودن بنر جدید</a>
+    </div>
+
+    <table class="table table-bordered table-hover table-striped text-center align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>تصویر</th>
+                <th>عنوان</th>
+                <th>موقعیت</th>
+                <th>اولویت</th>
+                <th>لینک</th>
+                <th>عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/images/banners/@item.ImageName" alt="@item.Title" class="img-thumbnail" style="max-width: 120px;" />
+                    </td>
+                    <td>@item.Title</td>
+                    <td>@item.Position</td>
+                    <td>@item.Priority</td>
+                    <td>
+                        <a href="@item.Link" target="_blank">@item.Link</a>
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning me-1">ویرایش</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger" onclick="return confirm('آیا مطمئن هستید؟')">حذف</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
