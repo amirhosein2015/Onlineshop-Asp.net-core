@@ -85,7 +85,7 @@ This ensures:
 
 ## 💡 Purpose & Motivation
 The goal of this project was to simulate a **real-world online shopping platform** and focus deeply on **backend architecture**, **data modeling**, and **secure user management**.  
-This project allowed me to practice building enterprise-grade solutions with **clean and modular backend design**, preparing for large-scale .NET applications.
+This project allows you to practice building enterprise-level solutions with **clean and modular backend design** and prepare for larger-scale .NET applications.
 
 ---
 
@@ -103,9 +103,9 @@ This project allowed me to practice building enterprise-grade solutions with **c
 
 ## 🚀 How to Run
 1. Clone the repository  
-   ```bash
+```bash
    git clone https://github.com/amirhosein2015/Onlineshop-Asp.net-core.git
-   ```
+```
 
 2.Open the solution in Visual Studio
 
