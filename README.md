@@ -135,8 +135,8 @@ Start the project and explore the online shop 🎉
 👋 Abdollah Mohajeri — Passionate .NET Developer with strong interest in backend architecture, clean code, and scalable web systems.
 This project reflects my dedication to mastering ASP.NET Core and creating production-ready applications.
 
-🔗 GitHub: amirhosein2015
+🔗 GitHub: [amirhosein2015](https://github.com/amirhosein2015/)
 
-💼 LinkedIn: View My Profile
+💼 LinkedIn: [View My Profile](https://www.linkedin.com/in/abdollah-mohajeri/)
 
 ⭐ If you like this project, don’t forget to star the repository and share your feedback!
