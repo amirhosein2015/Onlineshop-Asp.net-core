@@ -4,7 +4,8 @@
 ## 🌐 Project Overview
 This project is a **complete e-commerce web application** developed using **ASP.NET Core** and **C#**.  
 It demonstrates how to design and implement a **scalable, secure, and modular online store backend** using modern **.NET technologies** and **clean architectural principles**.
-![Uploading screen shot 2.jpg…]()
+![screen shot 2](https://github.com/user-attachments/assets/b11c306f-52e0-4969-a6e4-f2a881063fae)
+
 
 🎥 **Demo Video:** [Watch on YouTube](https://youtu.be/wEs8a78umnk)  
 💻 **Source Code:** [View on GitHub](https://github.com/amirhosein2015/Onlineshop-Asp.net-core)
