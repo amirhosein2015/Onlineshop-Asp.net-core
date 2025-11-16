@@ -1,8 +1,10 @@
 # 🛍️ Online Shop - ASP.NET Core Project
+![p-16](https://github.com/user-attachments/assets/aa44ef46-150b-45fe-bb24-dafad429d00c)
 
 ## 🌐 Project Overview
 This project is a **complete e-commerce web application** developed using **ASP.NET Core** and **C#**.  
 It demonstrates how to design and implement a **scalable, secure, and modular online store backend** using modern **.NET technologies** and **clean architectural principles**.
+![Uploading screen shot 2.jpg…]()
 
 🎥 **Demo Video:** [Watch on YouTube](https://youtu.be/wEs8a78umnk)  
 💻 **Source Code:** [View on GitHub](https://github.com/amirhosein2015/Onlineshop-Asp.net-core)
